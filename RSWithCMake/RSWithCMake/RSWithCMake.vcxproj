@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CACF68AF-D0CB-42B6-A6A1-CC353DFDE110}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9;c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9\backward;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include-fixed;c:\sysgcc\raspberry\arm-linux-gnueabihf\include;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)RSWithCMake-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9;c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9\backward;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include-fixed;c:\sysgcc\raspberry\arm-linux-gnueabihf\include;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)RSWithCMake-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-data.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-rtu.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-tcp.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\bandwidth-client.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\bandwidth-server-many-up.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\bandwidth-server-one.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\random-test-client.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\random-test-server.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\unit-test-client.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\unit-test-server.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\version.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\main.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectDetector.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-private.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-rtu-private.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-rtu.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-tcp-private.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-tcp.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-version.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.hpp" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.hpp" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.hpp" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectDetector.hpp" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.hpp" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\SeparatorRS\SeparatorRS\CMakeLists.txt" />
+    <Text Include="..\..\..\SeparatorRS\SeparatorRS\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\SeparatorRS\SeparatorRS\cmake\FindOpenCV.cmake" />
+    <None Include="..\..\..\SeparatorRS\SeparatorRS\toolchain-Debug.cmake" />
+    <None Include="..\..\..\SeparatorRS\SeparatorRS\toolchain-Release.cmake" />
+    <None Include="RSWithCMake-Debug.vgdbsettings" />
+    <None Include="RSWithCMake-Release.vgdbsettings" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

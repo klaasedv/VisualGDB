@@ -1,7 +1,12 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+# CodeDB Files
+*.npa
+*.npd
+*.rdb
 
+GlobalFile*
 # Folder config file
 Desktop.ini
 

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{e40504f5-70f5-4733-9e50-0a96de689502}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{a2588179-199d-4ef6-9468-78727df49acb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{7de54f69-d4ca-4ef7-b00f-a28756929049}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\contrib">
+      <UniqueIdentifier>{a8d220ed-0456-4638-9106-4ff1ef7153cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\contrib">
+      <UniqueIdentifier>{dc6bdd60-9dc3-4c00-b528-88e4fe8b2bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\contrib\libmodbus">
+      <UniqueIdentifier>{d8c6fa56-69ac-4a9c-8146-c4c4a22b7b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\contrib\libmodbus">
+      <UniqueIdentifier>{788cbca9-1a76-49b3-8416-e7496d637a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\contrib\libmodbus\src">
+      <UniqueIdentifier>{111a840f-45a7-4d25-9bea-3521df3d197e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\contrib\libmodbus\src">
+      <UniqueIdentifier>{bedd0409-118b-44da-9a07-eddd30f4a9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\contrib\libmodbus\tests">
+      <UniqueIdentifier>{55c14043-57a4-44ef-b769-9282a0a80478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\contrib\libmodbus\tests">
+      <UniqueIdentifier>{136b907a-fd09-489a-9e16-fd328690ac9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\src">
+      <UniqueIdentifier>{0891756a-c676-41eb-be13-e1090071ad07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\src">
+      <UniqueIdentifier>{24ca8013-d0e3-4e5e-b03e-f9290fbbdb4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\src\RapidoScan">
+      <UniqueIdentifier>{35358120-b0dc-4308-bbe0-90522e29b952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\src\RapidoScan">
+      <UniqueIdentifier>{13a7d68c-af42-4f16-b84f-7484eba01610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\src\SeparatorRS">
+      <UniqueIdentifier>{e16c3965-c8c7-4ade-998b-6b360caf842a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\src\SeparatorRS">
+      <UniqueIdentifier>{08f3e42e-930d-4e55-bca6-a9abb1b0ae64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake files">
+      <UniqueIdentifier>{9d092874-409c-4afd-816e-16b5afbf67a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{c7fbd11a-c90c-4eb3-bebe-40ef41200518}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-data.c">
+      <Filter>Source files\contrib\libmodbus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-rtu.c">
+      <Filter>Source files\contrib\libmodbus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-tcp.c">
+      <Filter>Source files\contrib\libmodbus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus.c">
+      <Filter>Source files\contrib\libmodbus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\bandwidth-client.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\bandwidth-server-many-up.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\bandwidth-server-one.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\random-test-client.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\random-test-server.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\unit-test-client.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\unit-test-server.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\version.c">
+      <Filter>Source files\contrib\libmodbus\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\main.cpp">
+      <Filter>Source files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.cpp">
+      <Filter>Source files\src\RapidoScan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.cpp">
+      <Filter>Source files\src\RapidoScan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.cpp">
+      <Filter>Source files\src\SeparatorRS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectDetector.cpp">
+      <Filter>Source files\src\SeparatorRS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.cpp">
+      <Filter>Source files\src\SeparatorRS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.cpp">
+      <Filter>Source files\src\SeparatorRS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-private.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-rtu-private.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-rtu.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-tcp-private.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-tcp.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-version.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.hpp">
+      <Filter>Header files\src\RapidoScan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.hpp">
+      <Filter>Header files\src\RapidoScan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.hpp">
+      <Filter>Header files\src\SeparatorRS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectDetector.hpp">
+      <Filter>Header files\src\SeparatorRS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.hpp">
+      <Filter>Header files\src\SeparatorRS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.hpp">
+      <Filter>Header files\src\SeparatorRS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\SeparatorRS\SeparatorRS\CMakeLists.txt">
+      <Filter>CMake files</Filter>
+    </Text>
+    <Text Include="..\..\..\SeparatorRS\SeparatorRS\src\CMakeLists.txt">
+      <Filter>Source files\src</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\SeparatorRS\SeparatorRS\toolchain-Debug.cmake">
+      <Filter>CMake files</Filter>
+    </None>
+    <None Include="RSWithCMake-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="..\..\..\SeparatorRS\SeparatorRS\toolchain-Release.cmake">
+      <Filter>CMake files</Filter>
+    </None>
+    <None Include="RSWithCMake-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="..\..\..\SeparatorRS\SeparatorRS\cmake\FindOpenCV.cmake">
+      <Filter>CMake files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
