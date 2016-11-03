@@ -103,9 +103,6 @@
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\main.cpp">
       <Filter>Source files\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.cpp">
-      <Filter>Source files\src\RapidoScan</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.cpp">
       <Filter>Source files\src\RapidoScan</Filter>
     </ClCompile>
@@ -120,6 +117,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.cpp">
       <Filter>Source files\src\SeparatorRS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.cpp">
+      <Filter>Source files\src\RapidoScan</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +159,12 @@
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.hpp">
       <Filter>Header files\src\SeparatorRS</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\MicaInterface.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\TinyGpio.h">
+      <Filter>Header files\contrib\libmodbus\src</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.hpp">
       <Filter>Header files\src\SeparatorRS</Filter>
     </ClInclude>
@@ -183,9 +189,6 @@
     </None>
     <None Include="RSWithCMake-Release.vgdbsettings">
       <Filter>VisualGDB settings</Filter>
-    </None>
-    <None Include="..\..\..\SeparatorRS\SeparatorRS\cmake\FindOpenCV.cmake">
-      <Filter>CMake files</Filter>
     </None>
   </ItemGroup>
 </Project>

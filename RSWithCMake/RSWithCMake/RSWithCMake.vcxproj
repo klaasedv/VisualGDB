@@ -37,7 +37,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <NMakeIncludeSearchPath>c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9;c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9\backward;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include-fixed;c:\sysgcc\raspberry\arm-linux-gnueabihf\include;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9;c:\sysgcc\raspberry\arm-linux-gnueabihf\include\c++\4.9\backward;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include;c:\sysgcc\raspberry\lib\gcc\arm-linux-gnueabihf\4.9\include-fixed;c:\sysgcc\raspberry\arm-linux-gnueabihf\include;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include\arm-linux-gnueabihf;c:\sysgcc\raspberry\arm-linux-gnueabihf\sysroot\usr\include;C:\SeparatorRS\Debug\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
@@ -78,10 +78,14 @@
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\main.cpp" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.cpp" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.cpp" />
-    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectDetector.cpp" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.cpp" />
-    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-private.h" />
@@ -91,19 +95,28 @@
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-tcp.h" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-version.h" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\MicaInterface.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\TinyGpio.h" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.hpp" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.hpp" />
-    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.hpp" />
-    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectDetector.hpp" />
-    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.hpp" />
-    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.hpp" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectDetector.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\ObjectExtractor.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\SeparatorRS.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\..\SeparatorRS\SeparatorRS\CMakeLists.txt" />
     <Text Include="..\..\..\SeparatorRS\SeparatorRS\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\SeparatorRS\SeparatorRS\cmake\FindOpenCV.cmake" />
     <None Include="..\..\..\SeparatorRS\SeparatorRS\toolchain-Debug.cmake" />
     <None Include="..\..\..\SeparatorRS\SeparatorRS\toolchain-Release.cmake" />
     <None Include="RSWithCMake-Debug.vgdbsettings" />
