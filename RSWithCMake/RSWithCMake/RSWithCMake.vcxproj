@@ -75,6 +75,8 @@
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\unit-test-client.c" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\unit-test-server.c" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\tests\version.c" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\MicaInterface.cpp" />
+    <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\TinyGpio.cpp" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\main.cpp" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.cpp" />
     <ClCompile Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.cpp" />
@@ -96,7 +98,9 @@
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus-version.h" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\contrib\libmodbus\src\modbus.h" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\MicaInterface.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\MicaInterface.hpp" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\TinyGpio.h" />
+    <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\Devices\TinyGpio.hpp" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\AutoSendClient.hpp" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\RapidoScan\RapidoScan.hpp" />
     <ClInclude Include="..\..\..\SeparatorRS\SeparatorRS\src\SeparatorRS\LineScanProducer.hpp">
